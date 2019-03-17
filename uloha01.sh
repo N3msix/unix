@@ -1,14 +1,15 @@
 #!/bin/bash
 
 if [ "$1" == "--typ" ]; then
-	if [ -f "$2" ]; then
-		echo "soubor"
+	if [ -f "$2"  -o -L "$2" -o -h "$2" ]; then
+		if [ -h "$2" -o -L "$2" ]; then
+			echo "symbolicky link"
+		else
+			echo "soubor"
+		fi
 	fi
 	if [ -d "$2" ]; then
 		echo "adresar"
-	fi
-	if [ -L "$2" -o -h "$2" ]; then
-		echo "symbolicky link"
 	fi
 	if [ -c "$2" ]; then
 		echo "znakove zarazeni"

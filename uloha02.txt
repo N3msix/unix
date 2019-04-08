@@ -1,0 +1,9 @@
+1. protoze jsme chteli posouvat o vice nez bylo argumentu a proto shift vypsal pouze zbyle d e
+2. $# vypise pocet promennych na vstupu
+3. ${#premenna} vraci delku argumentu
+4. ${!premenna} vpise promennou
+5. ${premenna:-vyraz} nastavi set na vyraz pokud je roven nule nebo je prazdny
+6. ${premenna:cislo} nacte promennou od daneho znaku
+7. ${premenna:cislo:cislo} nacte promennou od daneho znaku (cislo1) na dany pocet
+8. ${premenna/vyraz/text} prvni vyskyt vyrazu v promenne zmeni na dany text
+9. ${premenna//vyraz/text} vsechny vyskyty vyrazu v promenne zmeni na text
